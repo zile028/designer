@@ -14,6 +14,20 @@ body {
   line-height: 1.7;
 }
 
+h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  word-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -22,5 +36,320 @@ a {
 
 ul {
   list-style: none;
+}
+
+.container, section {
+  width: 72%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: rgba(243, 205, 82, 0.9);
+  position: fixed;
+  width: 100%;
+  color: #2e2e2e;
+  text-align: center;
+  z-index: 2;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  padding: 30px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+header {
+  background-color: #f3cd52;
+  padding-top: 150px;
+}
+
+header article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+}
+
+header article h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+header article h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+header article div {
+  width: 100%;
+  padding: 30px 30px 0;
+  background: #fff;
+}
+
+header article img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 0.9;
+}
+
+section {
+  padding: 60px 0 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.about, .portfolio article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .col, .portfolio article .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  text-align: center;
+}
+
+.about .col h3, .portfolio article .col h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.about .col p, .portfolio article .col p {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about .col button, .portfolio article .col button {
+  border: none;
+  background: #f3cd52;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 20px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.about .col button:hover, .portfolio article .col button:hover {
+  background: #fff;
+}
+
+.portfolio article {
+  margin-top: 70px;
+}
+
+.portfolio article .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22%;
+          flex: 0 0 22%;
+}
+
+.portfolio article .col h3 {
+  margin-bottom: 0px;
+}
+
+.portfolio article img {
+  width: 100%;
+}
+
+.contact form {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #2e2e2e;
+  padding: 20px;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+}
+
+.contact form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact form textarea {
+  height: 285px;
+  resize: none;
+  overflow: auto;
+}
+
+.contact form button {
+  border: none;
+  background: #f3cd52;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 20px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 90px;
+}
+
+.contact form button:hover {
+  background: #fff;
+}
+
+.contact article {
+  text-align: center;
+}
+
+.contact article a {
+  margin-right: 40px;
+  padding: 20px;
+  background: #f3cd52;
+}
+
+.contact article a i {
+  color: #2e2e2e;
+  font-size: 1.3rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.contact article a:last-child {
+  margin-right: 0px;
+}
+
+.contact article a:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.contact article a:hover i {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+footer p a {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+footer p a:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
