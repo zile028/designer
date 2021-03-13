@@ -34,11 +34,7 @@ $py: 100px 0;
     }
 }
 // extend
-.bgBasic {
-    background: linear-gradient(rgba(black, 0.4), rgba(black, 0.4)), url("img/header.jpg");
-    background-size: cover;
-    background-position: center;
-}
+
 // reset
 * {
     padding: 0;
@@ -48,7 +44,7 @@ $py: 100px 0;
 body {
     font-family: $fontFamily;
     font-size: $fontSize;
-    color: $black;
+    color: $lightgray;
     background: $gray;
     line-height: 1.7;
 }
@@ -59,4 +55,23 @@ a {
 }
 ul {
     list-style: none;
+}
+
+// nav
+nav {
+}
+// header
+header {
+}
+// about
+.about {
+}
+// portfolio
+.portfolio {
+}
+// contact
+.contact {
+}
+// footer
+footer {
 }
