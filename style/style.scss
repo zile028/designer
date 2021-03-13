@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap");
+
+// variables
+$fontFamily: "Pontano Sans", sans-serif;
+$fontSize: 16px;
+$gray: #333333;
+$darkgray: #2e2e2e;
+$yellow: #f3cd52;
+$lightgray: rgba(255, 255, 255, 0.4);
+$white: #fff;
+$transition: 0.4s ease;
+$py: 100px 0;
+
+// mixins
+@mixin flex($justify, $align, $direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin btn {
+    border: 2px solid $gray;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        background: $lightblue;
+        border: 2px solid $lightblue;
+    }
+}
+// extend
+.bgBasic {
+    background: linear-gradient(rgba(black, 0.4), rgba(black, 0.4)), url("img/header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+// reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $black;
+    background: $gray;
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+ul {
+    list-style: none;
+}
