@@ -43,6 +43,12 @@ ul {
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .container, section {
+    width: 95%;
+  }
+}
+
 nav {
   background-color: rgba(243, 205, 82, 0.9);
   position: fixed;
@@ -54,7 +60,6 @@ nav {
 
 nav ul {
   margin: 0 auto;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +77,15 @@ nav ul {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  nav ul {
+    width: 95%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 nav ul li {
   padding: 30px 40px;
   font-size: 1rem;
@@ -80,6 +94,13 @@ nav ul li {
   letter-spacing: 2px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media (max-width: 767px) {
+  nav ul li {
+    padding: 20px 0px;
+    font-size: 1rem;
+  }
 }
 
 nav ul li:hover {
@@ -131,6 +152,12 @@ header article div {
   background: #fff;
 }
 
+@media (max-width: 767px) {
+  header article div {
+    padding: 15px 15px 0;
+  }
+}
+
 header article img {
   width: 100%;
   -o-object-fit: cover;
@@ -142,6 +169,12 @@ header article img {
 section {
   padding: 60px 0 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 20px 0 30px;
+  }
 }
 
 .about, .portfolio article {
@@ -161,11 +194,26 @@ section {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .about, .portfolio article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about .col, .portfolio article .col {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .about .col, .portfolio article .col {
+    margin-bottom: 20px;
+  }
 }
 
 .about .col h3, .portfolio article .col h3 {
